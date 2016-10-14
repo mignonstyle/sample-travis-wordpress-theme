@@ -17,7 +17,10 @@ rm -r .gitignore
 
 echo ".bowerrc
 .editorconfig
+.gitignore
 .travis.yml
+.bin
+.DS_Store
 README.md
 bin
 bower.json
@@ -28,7 +31,7 @@ tests
 tmp" > .gitignore
 
 git init
-git config user.name "mignonstyle"
+git config user.name "Mignon Style"
 git config user.email "mignonxstyle@gmail.com"
 git add .
 git commit --quiet -m "Deploy from travis"
