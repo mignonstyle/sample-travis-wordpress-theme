@@ -4,7 +4,6 @@ var concat       = require( 'gulp-concat' );
 var csso         = require( 'gulp-csso' );
 var plumber      = require( 'gulp-plumber' );
 var sass         = require( 'gulp-sass' );
-var imagemin     = require( 'gulp-imagemin' );
 var uglify       = require( 'gulp-uglify' );
 var rename       = require( 'gulp-rename' );
 var watch        = require( 'gulp-watch' );
