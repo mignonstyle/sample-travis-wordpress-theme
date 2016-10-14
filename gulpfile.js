@@ -1,7 +1,7 @@
 var gulp         = require( 'gulp' );
-//var changed      = require( 'gulp-changed' );
-//var concat       = require( 'gulp-concat' );
-//var csso         = require( 'gulp-csso' );
+var changed      = require( 'gulp-changed' );
+var concat       = require( 'gulp-concat' );
+var csso         = require( 'gulp-csso' );
 //var imagemin     = require( 'gulp-imagemin' );
 //var plumber      = require( 'gulp-plumber' );
 //var sass         = require( 'gulp-sass' );
