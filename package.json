@@ -1,17 +1,21 @@
 {
-  "name": "sample-travis-wordpress-theme",
+  "name": "@mignonstyle/sample-travis-wordpress-theme",
   "version": "1.0.0",
   "description": "",
+  "author": {
+    "name": "Mignon Style",
+    "url": "http://mignonstyle.com"
+  },
+  "license": "GPLv2",
   "scripts": {
     "build": "./node_modules/gulp/bin/gulp.js",
-    "test": "./node_modules/gulp/bin/gulp.js test"
   },
-  "author": "Mignon Style",
-  "license": "GPL",
+  "browserify-shim": {
+    "jquery": "global:jQuery"
+  },
   "devDependencies": {
-    "bootstrap": "^3.3.5",
-    "genericons": "git+https://github.com/Automattic/Genericons.git",
-    "gulp": "^3.9.0",
+    "browser-sync": "^2.17.1",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-decompress": "^1.2.0",
     "gulp-download": "0.0.1",
