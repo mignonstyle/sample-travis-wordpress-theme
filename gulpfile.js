@@ -1,5 +1,5 @@
 var gulp         = require( 'gulp' );
-var jpegtran = require('imagemin-jpegtran');
+//var jpegtran = require('imagemin-jpegtran');
 //var optipng = require('imagemin-optipng');
 
 var changed      = require( 'gulp-changed' );
