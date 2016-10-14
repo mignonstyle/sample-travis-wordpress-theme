@@ -9,6 +9,8 @@ before_script: bash ./.bin/build.sh
 script:
   - ls -al style.css
 
+after_success: bash ./.bin/deploy.sh
+
 env:
   global:
     - GH_REF: github.com/mignonstyle/sample-travis-wordpress-theme.git
