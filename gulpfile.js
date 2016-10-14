@@ -8,7 +8,7 @@ var sass         = require( 'gulp-sass' );
 //var uglify       = require( 'gulp-uglify' );
 //var rename       = require( 'gulp-rename' );
 //var dir          = require( 'require-dir' );
-//var watch        = require( 'gulp-watch' );
+var watch        = require( 'gulp-watch' );
 var autoprefixer = require( 'gulp-autoprefixer' );
 var browserSync  = require( 'browser-sync' );
 
