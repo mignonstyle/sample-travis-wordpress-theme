@@ -1,25 +1,34 @@
 // $ npm install --save-dev gulp
 // $ npm run build
 
-var gulp         = require('gulp'),
-	sass         = require('gulp-sass'),
-	sassLint     = require('gulp-sass-lint'),
-	rename       = require('gulp-rename'),
-	//csso         = require('gulp-csso'),
-	postcss      = require('gulp-postcss'),
-	cssnano      = require('cssnano');
-	autoprefixer = require('autoprefixer'),
-	doiuse       = require('doiuse'),
-	mqpacker     = require('css-mqpacker'),
-	watch        = require('gulp-watch'),
-	plumber      = require('gulp-plumber'),
-	jscs         = require('gulp-jscs'),
-	jshint       = require('gulp-jshint'),
-	stylish      = require('jshint-stylish'),
-	runSequence  = require('run-sequence'),
-	concat       = require('gulp-concat'),
-	uglify       = require('gulp-uglify'),
-	browserSync  = require('browser-sync');
+var gulp           = require('gulp');
+
+// Sass,CSS
+//----------------------
+var sass           = require('gulp-sass');
+var sassLint       = require('gulp-sass-lint');
+// var csso           = require('gulp-csso');
+var postcss        = require('gulp-postcss');
+var cssnano        = require('cssnano');
+var autoprefixer   = require('autoprefixer');
+var doiuse         = require('doiuse');
+var mqpacker       = require('css-mqpacker');
+
+// JavaScript
+//--------------------
+var jscs           = require('gulp-jscs');
+var jshint         = require('gulp-jshint');
+var stylish        = require('jshint-stylish');
+var uglify         = require('gulp-uglify');
+
+// utility
+//--------------------
+var rename         = require('gulp-rename');
+var watch          = require('gulp-watch');
+var plumber        = require('gulp-plumber');
+var runSequence    = require('run-sequence');
+var concat         = require('gulp-concat');
+var browserSync    = require('browser-sync');
 
 // ------------------------------------------------
 // Auto-polyfill
