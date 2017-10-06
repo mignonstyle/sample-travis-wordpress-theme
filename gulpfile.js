@@ -1,15 +1,25 @@
-var gulp         = require( 'gulp' );
-var changed      = require( 'gulp-changed' );
-var concat       = require( 'gulp-concat' );
-var csso         = require( 'gulp-csso' );
-var plumber      = require( 'gulp-plumber' );
-var sass         = require( 'gulp-sass' );
-var uglify       = require( 'gulp-uglify' );
-var rename       = require( 'gulp-rename' );
-var watch        = require( 'gulp-watch' );
-var autoprefixer = require( 'gulp-autoprefixer' );
-var requireDir   = require( 'require-dir' );
-var browserSync  = require( 'browser-sync' );
+// $ npm install --save-dev gulp
+// $ npm run build
+
+var gulp         = require('gulp'),
+	sass         = require('gulp-sass'),
+	sassLint     = require('gulp-sass-lint'),
+	rename       = require('gulp-rename'),
+	csso         = require('gulp-csso'),
+	postcss      = require('gulp-postcss'),
+	cssnano      = require('cssnano');
+	autoprefixer = require('autoprefixer'),
+	doiuse       = require('doiuse'),
+	mqpacker     = require('css-mqpacker'),
+	watch        = require('gulp-watch'),
+	plumber      = require('gulp-plumber'),
+	jscs         = require('gulp-jscs'),
+	jshint       = require('gulp-jshint'),
+	stylish      = require('jshint-stylish'),
+	runSequence  = require('run-sequence'),
+	concat       = require('gulp-concat'),
+	uglify       = require('gulp-uglify'),
+	browserSync  = require('browser-sync');
 
 gulp.task( 'default', function () {
 
