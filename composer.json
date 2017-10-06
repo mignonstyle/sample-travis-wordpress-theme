@@ -1,6 +1,6 @@
 {
-    "name": "mignonstyle/sample-travis-wordpress-theme",
-    "description": "Travis ci settings",
+    "name": "mignonstyle/travis-wordpress-theme-settings",
+    "description": "Travis ci wordpress theme settings",
     "authors": [
         {
             "name": "Mignon Style"
