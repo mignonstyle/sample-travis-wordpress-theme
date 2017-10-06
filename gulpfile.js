@@ -21,6 +21,21 @@ var gulp         = require('gulp'),
 	uglify       = require('gulp-uglify'),
 	browserSync  = require('browser-sync');
 
+// ------------------------------------------------
+// Auto-polyfill
+// Corrective action due to travis error in autoprefixer.
+// ------------------------------------------------
+require('es6-promise').polyfill();
+
+// ------------------------------------------------
+// Browsers setting
+// ------------------------------------------------
+var browsers = [
+	'last 1 version',
+	'> 50%'
+];
+
+
 gulp.task( 'default', function () {
 
 } );
