@@ -1,4 +1,4 @@
-# Sample Travis WordPress Theme Settings
+# Travis WordPress Theme Settings
 
 This repository is a settings of Travis CI of WordPress theme
 
